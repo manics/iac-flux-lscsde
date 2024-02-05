@@ -27,5 +27,5 @@ spec:
     disableWaitForJobs: true
   valuesFrom:
   - kind: ConfigMap
-    name: environment-configs
-    key: aks-dns-operator-config.yaml
+    name: aks-dns-operator-config
+    key: values.yaml

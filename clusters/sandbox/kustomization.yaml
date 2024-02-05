@@ -3,10 +3,8 @@ kind: Kustomization
 namespace: lscsde
 resources: []
 configMapGenerator:
-  - name: environment-configs
+  - name: aks-dns-operator-config
     files:
-      - aks-dns-operator-config.yaml=aks-dns-operator-config.yaml
-
-    
+      - values.yaml=aks-dns-operator-config.yaml
 generatorOptions:
   disableNameSuffixHash: true
