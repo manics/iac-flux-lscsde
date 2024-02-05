@@ -28,4 +28,3 @@ spec:
   valuesFrom:
   - kind: ConfigMap
     name: aks-dns-operator-config
-    key: values.yaml
