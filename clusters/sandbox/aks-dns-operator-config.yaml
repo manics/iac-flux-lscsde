@@ -1,13 +1,18 @@
 env:
 - name: AZURE_CLIENT_ID
-   value: 009297ad-7a13-4d98-91d0-46f68c815882
+  value: 009297ad-7a13-4d98-91d0-46f68c815882
+
 - name: AZURE_TENANT_ID
-   value:f12f0279-8a84-4068-8322-7a6fb0f839b8
+  value: f12f0279-8a84-4068-8322-7a6fb0f839b8
+
 - name: DNS_PREFIX
   value: "sandbox-"
+
 - name: AZ_SUBSCRIPTION_ID
   value: "de97be38-945e-4824-a44b-5b101c0e048b"
+
 - name: PRIVATE_DNS_ZONE 
   value: xlscsde.nhs.uk
+  
 - name: RESOURCE_GROUP_NAME
   value: rg-icb-uks-plt-dns
