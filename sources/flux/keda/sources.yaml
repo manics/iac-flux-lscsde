@@ -16,3 +16,7 @@ spec:
     namespace: lscsde-config
   timeout: 1m0s
   wait: false
+  postBuild:
+    substituteFrom:
+    - kind: ConfigMap
+      name: cluster-config

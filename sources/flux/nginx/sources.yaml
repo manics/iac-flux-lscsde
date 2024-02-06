@@ -1,20 +1,18 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: github-runner-sources
+  name: nginx
   namespace: lscsde-config
 spec:
-  dependsOn:
-  - name: github-runner-cluster-config
   force: false
   interval: 1m0s
-  path: sources
+  path: ./
   prune: true
   retryInterval: 1m0s
   serviceAccountName: flux-applier
   sourceRef:
     kind: GitRepository
-    name: github-runner
+    name: nginx
     namespace: lscsde-config
   timeout: 1m0s
   wait: false
