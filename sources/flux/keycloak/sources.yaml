@@ -5,7 +5,7 @@ metadata:
   namespace: lscsde-config
 spec:
   dependsOn:
-  - certmanager
+  - name: certmanager
   force: false
   interval: 1m0s
   path: ./
