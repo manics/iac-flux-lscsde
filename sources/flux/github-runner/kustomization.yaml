@@ -3,5 +3,4 @@ kind: Kustomization
 namespace: github-runner
 resources:
   - namespace.yaml
-  - repository.yaml
   - sources.yaml

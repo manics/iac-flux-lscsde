@@ -3,3 +3,4 @@ kind: Kustomization
 namespace: github-runner
 resources:
 - cluster-config.yaml
+- repository.yaml
