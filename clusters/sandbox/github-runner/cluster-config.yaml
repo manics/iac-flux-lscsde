@@ -16,4 +16,9 @@ spec:
     name: github-runner
     namespace: github-runner
   timeout: 10m0s
-  wait: true
+  wait: false
+  postBuild:
+    substituteFrom:
+    - kind: ConfigMap
+      name: cluster-config
+      namespace: lscsde-config
