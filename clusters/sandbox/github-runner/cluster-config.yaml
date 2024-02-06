@@ -2,7 +2,7 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: cluster-config
-  namespace: github-runner
+  namespace: lscsde-config
 spec:
   force: false
   interval: 1m0s
@@ -20,4 +20,3 @@ spec:
     substituteFrom:
     - kind: ConfigMap
       name: cluster-config
-      namespace: lscsde-config
