@@ -7,7 +7,6 @@ spec:
   force: false
   interval: 1m0s
   path: cluster/sandbox
-  postBuild: {}
   prune: false
   retryInterval: 1m0s
   serviceAccountName: flux-applier
