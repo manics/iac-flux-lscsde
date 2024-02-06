@@ -6,3 +6,4 @@ resources:
   - nginx
   - certmanager
   - keycloak
+  - jupyter
