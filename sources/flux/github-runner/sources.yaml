@@ -2,24 +2,19 @@ apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
   name: sources
+  namespace: lscsde-config
 spec:
   dependsOn:
-  - name: cluster-config
+  - name: github-runner-cluster-config
   force: false
   interval: 1m0s
-  patches:
-    target:
-      annotationSelector: clusterconfig.azure.com/use-managed-source=true
-      group: kustomize.toolkit.fluxcd.io
-      kind: Kustomization
   path: sources
-  postBuild: {}
-  prune: false
+  prune: true
   retryInterval: 1m0s
   serviceAccountName: flux-applier
   sourceRef:
     kind: GitRepository
     name: github-runner
-    namespace: github-runner
-  timeout: 10m0s
-  wait: true
+    namespace: lscsde-config
+  timeout: 1m0s
+  wait: false
