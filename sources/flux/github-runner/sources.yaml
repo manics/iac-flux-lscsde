@@ -1,7 +1,7 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: sources
+  name: github-runner-sources
   namespace: lscsde-config
 spec:
   dependsOn:
