@@ -5,7 +5,7 @@ metadata:
 spec:
   force: false
   interval: 1m0s
-  path: cluster/sandbox
+  path: cluster/dev
   prune: true
   retryInterval: 1m0s
   serviceAccountName: flux-applier
