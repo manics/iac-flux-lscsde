@@ -16,7 +16,7 @@ data:
   configmap_transformer_branch: main
   configmap_transformer_chart_version: "0.1.0"
 
-  nginx_branch: main
+  nginx_branch: "release/0.1.43"
   nginx_chart_version: "4.9.1"
   
   keda_branch: "release/0.1.27"
