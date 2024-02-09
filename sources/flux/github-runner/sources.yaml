@@ -1,14 +1,14 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: github-runner-sources
+  name: github-runner
   namespace: lscsde-config
 spec:
   dependsOn:
   - name: github-runner-cluster-config
   force: false
   interval: 1m0s
-  path: sources
+  path: ./
   prune: true
   retryInterval: 1m0s
   serviceAccountName: flux-applier
