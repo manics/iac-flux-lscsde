@@ -9,7 +9,7 @@ data:
   certmanager_chart_version: "v1.14.2"
   trustmanager_chart_version: "0.8.0"
   
-  github_runner_branch: "release/0.1.44"
+  github_runner_branch: "release/0.1.45"
   github_runner_chart_version: "0.1.17"
   
   aks_dns_branch: main
