@@ -10,6 +10,7 @@ spec:
   chart:
     spec:
       chart: aks-dns-operator
+      version: ${aks_dns_chart_version}
       sourceRef:
         kind: HelmRepository
         name: lsc-sde

@@ -10,6 +10,7 @@ spec:
   chart:
     spec:
       chart: configmap-transformer-controller
+      version: ${configmap_transformer_chart_version}
       sourceRef:
         kind: HelmRepository
         name: lsc-sde
