@@ -4,7 +4,7 @@ metadata:
   name: deployment-config
 data:
   environment_name: dev
-  
+
   certmanager_branch: "environments/dev/0.1.20"
   certmanager_chart_version: "v1.14.2"
   trustmanager_chart_version: "0.8.0"
@@ -21,7 +21,7 @@ data:
   nginx_branch: "environments/dev/0.1.43"
   nginx_chart_version: "4.9.1"
   
-  keda_branch: "environments/dev/0.1.27"
+  keda_branch: "environments/dev/0.1.29"
   keda_chart_version: "2.13.1"
 
   keycloak_branch: "environments/dev/0.1.53"
