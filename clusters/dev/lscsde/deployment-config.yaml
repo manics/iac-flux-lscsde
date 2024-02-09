@@ -5,6 +5,7 @@ metadata:
 data:
   certmanager_branch: main
   certmanager_chart_version: "1.14.2"
+  trustmanager_chart_version: "0.8.0"
   
   github_runner_branch: main
   github_runner_chart_version: "0.1.17"
