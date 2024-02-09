@@ -4,3 +4,4 @@ namespace: lscsde-config
 resources:
 - sources.yaml
 - repository.yaml
+- deployment-config.yaml

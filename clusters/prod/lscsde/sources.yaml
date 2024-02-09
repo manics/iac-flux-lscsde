@@ -19,3 +19,5 @@ spec:
     substituteFrom:
     - kind: ConfigMap
       name: cluster-config
+    - kind: ConfigMap
+      name: deployment-config
