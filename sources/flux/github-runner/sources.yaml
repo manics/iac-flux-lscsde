@@ -4,6 +4,8 @@ metadata:
   name: github-runner
   namespace: lscsde-config
 spec:
+  dependsOn:
+  - name: keda
   force: false
   interval: 1m0s
   path: ./
