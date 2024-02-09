@@ -3,6 +3,8 @@ kind: ConfigMap
 metadata:
   name: deployment-config
 data:
+  environment_name: dev
+  
   certmanager_branch: "environments/dev/0.1.20"
   certmanager_chart_version: "v1.14.2"
   trustmanager_chart_version: "0.8.0"
