@@ -4,5 +4,4 @@ namespace: lscsde
 resources:
   - configmap-transformer
   - aks-dns
-  - secrets-distributor
   - repository.yaml

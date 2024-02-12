@@ -7,3 +7,5 @@ resources:
   - certmanager
   - keycloak
   - jupyter
+  - secrets-distributor
+  - repository.yaml

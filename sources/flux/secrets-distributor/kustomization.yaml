@@ -3,3 +3,5 @@ kind: Kustomization
 resources:
   - release.yaml
   - secret.yaml
+  - namespace.yaml
+  - serviceaccount.yaml
