@@ -5,7 +5,7 @@ metadata:
 data:
   environment_name: sandbox
 
-  secrets_distributor_chart_version: "0.1.0"
+  secrets_distributor_chart_version: "0.1.1"
 
   certmanager_branch: main
   certmanager_chart_version: "v1.14.2"
