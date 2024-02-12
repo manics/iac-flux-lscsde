@@ -5,7 +5,7 @@ metadata:
 data:
   environment_name: dev
   
-  secrets_distributor_chart_version: "0.1.1"
+  secrets_distributor_chart_version: "0.1.2"
 
   certmanager_branch: "environments/dev/0.1.20"
   certmanager_chart_version: "v1.14.2"
