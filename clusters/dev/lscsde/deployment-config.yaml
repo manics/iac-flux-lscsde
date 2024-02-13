@@ -28,5 +28,5 @@ data:
 
   keycloak_branch: "environments/dev/0.1.56"
 
-  jupyter_branch: "environments/dev/0.2.12"
+  jupyter_branch: "environments/dev/0.2.13"
   jupyter_chart_version: "3.2.1"
