@@ -5,6 +5,8 @@ metadata:
 data:
   environment_name: sandbox
 
+  ohdsi_branch: main 
+  
   secrets_distributor_chart_version: "0.1.2"
 
   certmanager_branch: main

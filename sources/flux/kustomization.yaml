@@ -8,4 +8,5 @@ resources:
   - keycloak
   - jupyter
   - secrets-distributor
+  - ohdsi
   - repository.yaml
