@@ -6,6 +6,7 @@ data:
   environment_name: production
   
   ohdsi_branch: main 
+  ohdsi_chart_version: "0.1.0"
   
   secrets_distributor_chart_version: "0.1.2"
 

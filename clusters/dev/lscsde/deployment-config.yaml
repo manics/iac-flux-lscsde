@@ -4,8 +4,9 @@ metadata:
   name: deployment-config
 data:
   environment_name: dev
-  
+
   ohdsi_branch: main 
+  ohdsi_chart_version: "0.1.0"
   
   secrets_distributor_chart_version: "0.1.2"
 
