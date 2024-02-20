@@ -6,7 +6,7 @@ data:
   environment_name: sandbox
 
   ohdsi_branch: main 
-  ohdsi_chart_version: "0.1.2"
+  ohdsi_chart_version: "0.1.3"
 
   secrets_distributor_chart_version: "0.1.2"
 
