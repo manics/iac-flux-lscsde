@@ -33,3 +33,6 @@ data:
 
   jupyter_branch: main
   jupyter_chart_version: "3.2.1"
+
+  analytics_workspace_management_chart_version: "0.1.0"
+  analytics_workspace_management_branch: "main"
