@@ -10,3 +10,4 @@ resources:
   - secrets-distributor
   - ohdsi
   - repository.yaml
+  - analytics-workspace-management
