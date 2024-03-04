@@ -31,8 +31,8 @@ data:
 
   keycloak_branch: "environments/dev/0.1.56"
 
-  jupyter_branch: "environments/dev/0.2.15"
+  jupyter_branch: "environments/dev/0.2.43"
   jupyter_chart_version: "3.2.1"
 
   analytics_workspace_management_chart_version: "0.1.1"
-  analytics_workspace_management_branch: "main"
+  analytics_workspace_management_branch: "environments/dev/0.1.3"
