@@ -29,6 +29,7 @@ jobs:
     with:
       symver: ${{ needs.semver.outputs.GitVersion_SemVer }}
       directory: iac/flux/lscsde
+    secrets: inherit
 
   dev:
     uses: lsc-sde/lsc-sde/.github/workflows/flux.yaml@main
