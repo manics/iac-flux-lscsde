@@ -12,3 +12,4 @@ flux create kustomization lscsde-sources --source="GitRepository/lscsde" --names
 ```
 
 This should in turn deploy all of the resulting resources on your local cluster.
+
