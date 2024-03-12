@@ -4,4 +4,4 @@ metadata:
   name: configuration
 data:
   environment_name: sandbox
-  lsc_components_branch: main
+  lscsde_components_branch: main
