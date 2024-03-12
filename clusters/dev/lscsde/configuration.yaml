@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configuration
+data:
+  environment_name: dev
+  lscsde_components_branch: release/0.1.2

@@ -1,10 +1,10 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: lscsde
+  name: lscsde-configuration
 spec:
   interval: 1m0s
   ref:
     branch: main
   timeout: 60s
-  url: https://github.com/lsc-sde/iac-flux-lscsde
+  url: https://github.com/lsc-sde/iac-flux-lscsde-configuration

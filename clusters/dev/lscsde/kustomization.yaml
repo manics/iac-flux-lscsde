@@ -10,4 +10,4 @@ generatorOptions:
 resources:
 - sources.yaml
 - repository.yaml
-- deployment-config.yaml
+- configuration.yaml
