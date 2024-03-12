@@ -1,17 +1,16 @@
 apiVersion: kustomize.toolkit.fluxcd.io/v1
 kind: Kustomization
 metadata:
-  name: lscsde-sources
+  name: lscsde-configuration-sources
 spec:
   force: false
   interval: 1m0s
-  path: sources
   prune: true
   retryInterval: 1m0s
   serviceAccountName: flux-applier
   sourceRef:
     kind: GitRepository
-    name: lscsde
+    name: lscsde-configuration
     namespace: lscsde-config
   timeout: 1m0s
   wait: false
@@ -20,4 +19,4 @@ spec:
     - kind: ConfigMap
       name: cluster-config
     - kind: ConfigMap
-      name: deployment-config
+      name: configuration
