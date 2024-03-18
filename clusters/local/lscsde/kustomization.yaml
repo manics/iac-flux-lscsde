@@ -11,4 +11,3 @@ resources:
 - sources.yaml
 - repository.yaml
 - configuration.yaml
-- secret.yaml
