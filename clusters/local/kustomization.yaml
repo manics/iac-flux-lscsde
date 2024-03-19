@@ -3,5 +3,4 @@ kind: Kustomization
 resources:
 - lscsde
 - kube-system
-- secrets-distributor
 - serviceaccount.yaml

@@ -13,3 +13,4 @@ openssl req -key wildcard.key -new -out wildcard.csr
 openssl x509 -req -CA ca.crt -CAkey ca.key -in wildcard.csr -out wildcard.crt -days 3650 -CAcreateserial -extfile wildcard.ext
 openssl rsa -in wildcard.key -out wildcard-decrypted.key
 openssl rsa -in ca.key -out ca-decrypted.key
+openssl pkcs12 -inkey wildcard.key -in wildcard.crt -export -out wildcard.pfx
