@@ -15,7 +15,7 @@ data:
   azure_keyvault_name: "not-applicable"
   azure_storage_account: "not-applicable"
   azure_tenant_id: "not-applicable"
-  private_dnz_zone: "not-applicable"
+  private_dnz_zone: "lsc-sde.local"
   dns_prefix: "lscsde.local"
   dns_resource_group: "not-applicable"
   dns_subscription_id: "not-applicable"
