@@ -5,8 +5,8 @@ metadata:
 data:
   environment_name: local
   lscsde_components_branch: main
-  nginx_ingress_class_name: nginx-local
-  jupyter_storage_provisioner: k8s.io/minikube-hostpath
+  nginx_ingress_class_name: nginx
+  jupyter_storage_provisioner: microk8s.io/hostpath
 ---
 apiVersion: v1
 kind: ConfigMap

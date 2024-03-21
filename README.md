@@ -4,10 +4,11 @@ Flux Configuration for LSC SDE Components
 ## Developer Guide
 To test the changes, ensure that you are on your developer machine and that the context is set correctly to your local instance please amend the following script to use the target branch:
 
-for minikube users:
+for microk8s users:
 ```bash
-minikube start --mount --mount-string "/run/desktop/mnt/host/c/tmp/secrets:/run/desktop/mnt/host/c/tmp/secrets"
-minikube addons enable ingress
+
+microk8s enable hostpath-storage
+microk8s enable rbac
 flux install
 ```
 
