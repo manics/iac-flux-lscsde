@@ -6,4 +6,4 @@ data:
   environment_name: production
   lscsde_components_branch: release/0.1.2
   nginx_ingress_class_name: nginx
-
+  jupyter_storage_provisioner: file.csi.azure.com
