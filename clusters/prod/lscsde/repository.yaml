@@ -5,6 +5,6 @@ metadata:
 spec:
   interval: 1m0s
   ref:
-    branch: release/0.1.61
+    branch: release/0.1.62
   timeout: 60s
   url: https://github.com/lsc-sde/iac-flux-lscsde-configuration
