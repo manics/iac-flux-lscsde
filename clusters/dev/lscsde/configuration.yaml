@@ -5,3 +5,4 @@ metadata:
 data:
   environment_name: dev
   lscsde_components_branch: release/0.1.2
+  nginx_ingress_class_name: nginx

@@ -4,8 +4,14 @@ Flux Configuration for LSC SDE Components
 ## Developer Guide
 To test the changes, ensure that you are on your developer machine and that the context is set correctly to your local instance please amend the following script to use the target branch:
 
+for minikube users:
 ```bash
-kubectl config use-context docker-desktop
+minikube start --mount --mount-string "/run/desktop/mnt/host/c/tmp/secrets:/run/desktop/mnt/host/c/tmp/secrets"
+minikube addons enable ingress
+flux install
+```
+
+```bash
 kubectl create namespace lscsde
 kubectl create namespace lscsde-config
 flux create source git lscsde --url="https://github.com/lsc-sde/iac-flux-lscsde" --branch=issues/sjt/7-local-env --namespace=lscsde

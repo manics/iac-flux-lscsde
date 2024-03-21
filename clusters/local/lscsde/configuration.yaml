@@ -5,6 +5,7 @@ metadata:
 data:
   environment_name: local
   lscsde_components_branch: main
+  nginx_ingress_class_name: nginx-local
 ---
 apiVersion: v1
 kind: ConfigMap
