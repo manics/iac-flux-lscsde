@@ -5,8 +5,7 @@ metadata:
 data:
   environment_name: local
   lscsde_components_branch: main
-  nginx_ingress_class_name: nginx-local
-  nginx_ingress_suspended: "true"
+  nginx_ingress_class_name: nginx
   jupyter_storage_provisioner: microk8s.io/hostpath
 ---
 apiVersion: v1
