@@ -7,8 +7,7 @@ To test the changes, ensure that you are on your developer machine and that the 
 for microk8s users:
 ```bash
 
-microk8s enable hostpath-storage
-microk8s enable rbac
+microk8s enable dns hostpath-storage rbac
 flux install
 ```
 

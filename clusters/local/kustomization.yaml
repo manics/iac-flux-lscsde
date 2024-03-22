@@ -4,4 +4,3 @@ resources:
 - lscsde
 - kube-system
 - serviceaccount.yaml
-- ingressclass.yaml
