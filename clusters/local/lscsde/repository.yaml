@@ -1,0 +1,23 @@
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: lscsde-configuration
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  timeout: 60s
+  url: https://github.com/lsc-sde/iac-flux-lscsde-configuration
+
+---
+apiVersion: source.toolkit.fluxcd.io/v1
+kind: GitRepository
+metadata:
+  name: secret-store-csi
+  namespace: kube-system
+spec:
+  interval: 1m0s
+  ref:
+    branch: main
+  timeout: 60s
+  url: https://kubernetes-sigs.github.io/secrets-store-csi-driver/charts

@@ -1,0 +1,33 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: configuration
+data:
+  environment_name: local
+  lscsde_components_branch: main
+  nginx_ingress_class_name: nginx
+  jupyter_storage_provisioner: microk8s.io/hostpath
+---
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: cluster-config
+data:
+  azure_client_id: "not-applicable"
+  azure_keyvault_name: "not-applicable"
+  azure_storage_account: "not-applicable"
+  azure_tenant_id: "f12f0279-8a84-4068-8322-7a6fb0f839b8"
+  private_dnz_zone: "lsc-sde.local"
+  dns_prefix: ""
+  dns_resource_group: "not-applicable"
+  dns_subscription_id: "not-applicable"
+  azure_subscription_id: "not-applicable"
+  azure_sql_server: "cluster.lsc-sde.local"
+  azure_resource_group: "not-applicable"
+  azure_location: "not-applicable"
+  postgresql_server: "cluster.lsc-sde.local"
+  postgresql_username: "pgsql"
+  jupyterhub_client_id: "28dcbe4c-77d0-4459-b848-e6d4c7bded65"
+  jupyterhub_users_role: "jupyter-users"
+  jupyterhub_admins_role: "jupyter-admins"
+  ohdsi_client_id: "28dcbe4c-77d0-4459-b848-e6d4c7bded65"

@@ -5,3 +5,5 @@ metadata:
 data:
   environment_name: sandbox
   lscsde_components_branch: main
+  nginx_ingress_class_name: nginx
+  jupyter_storage_provisioner: file.csi.azure.com
