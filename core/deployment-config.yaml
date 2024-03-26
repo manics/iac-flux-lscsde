@@ -23,5 +23,5 @@ data:
   jupyter_branch: "release/0.2.58"
   jupyter_chart_version: "3.2.1"
   analytics_workspace_management_chart_version: "0.1.11"
-  analytics_workspace_management_branch: "release/0.1.7"
+  analytics_workspace_management_branch: "release/0.1.8"
   metrics_server_chart_version: "3.12.0"
