@@ -75,6 +75,7 @@ This will require a user called **ohdsi@cluster.lsc-sde.local** with permissions
 
 ### Configure Flux for LSCSDE
 ```bash
+kubectl config use-context docker-desktop
 kubectl create namespace lscsde
 kubectl create namespace lscsde-config
 flux create source git lscsde --url="https://github.com/lsc-sde/iac-flux-lscsde" --branch=main --namespace=lscsde
