@@ -8,6 +8,4 @@ configMapGenerator:
 generatorOptions:
   disableNameSuffixHash: true
 resources:
-- sources.yaml
-- repository.yaml
 - configuration.yaml

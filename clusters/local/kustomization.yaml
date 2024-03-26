@@ -4,3 +4,4 @@ resources:
 - lscsde
 - kube-system
 - serviceaccount.yaml
+- ../../core
