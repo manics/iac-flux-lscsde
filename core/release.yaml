@@ -26,6 +26,13 @@ spec:
       retries: -1
     disableWait: true
     disableWaitForJobs: true
+  rollback:
+    cleanupOnFail: false
+    disableWait: true
+    disableWaitForJobs: true
+  uninstall:
+    deletionPropagation: orphan
+    disableWait: true
   valuesFrom:
   - kind: ConfigMap
     name: cluster-config
