@@ -6,7 +6,7 @@ data:
   environment_name: local
   lscsde_components_branch: main
   jupyter_storage_provisioner: microk8s.io/hostpath
-  azure_enabled: "false"
+  azure_state: "disabled"
 ---
 apiVersion: v1
 kind: ConfigMap
