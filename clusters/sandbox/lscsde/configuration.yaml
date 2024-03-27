@@ -7,5 +7,8 @@ data:
   lscsde_components_branch: main
   jupyter_storage_provisioner: file.csi.azure.com
   helm_configuration: |
-    azure:
-      state: "enabled"
+    {
+      "azure" : {
+        "state" : "enabled"
+      }
+    }
