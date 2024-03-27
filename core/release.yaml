@@ -176,8 +176,7 @@ spec:
     
   - kind: ConfigMap
     name: environment-configuration
-    valuesKey: azure_state
-    targetPath: azure.state
+    valuesKey: helm_configuration
     
   
     
