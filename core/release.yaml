@@ -174,9 +174,9 @@ spec:
     valuesKey: analytics_workspace_management_branch
     targetPath: components.analytics_workspace_management.repository.branch
     
-  - kind: ConfigMap
-    name: environment-configuration
-    valuesKey: helm_configuration
+#  - kind: ConfigMap
+#    name: environment-configuration
+#    valuesKey: helm_configuration
     
   
     
