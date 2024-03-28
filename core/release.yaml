@@ -10,7 +10,7 @@ spec:
   chart:
     spec:
       chart: lscsde-flux
-      version: 0.1.10
+      version: 0.1.14
       sourceRef:
         kind: HelmRepository
         name: core
@@ -34,155 +34,119 @@ spec:
     deletionPropagation: orphan
     disableWait: true
   valuesFrom:
-  - kind: ConfigMap
-    name: cluster-config
-    valuesKey: azure_client_id
-    targetPath: azure.client_id
-    
-  - kind: ConfigMap
-    name: cluster-config
-    valuesKey: azure_keyvault_name
-    targetPath: azure.keyvault_name
-    
-  - kind: ConfigMap
-    name: cluster-config
-    valuesKey: azure_tenant_id
-    targetPath: azure.tenant_id
-    
-  - kind: ConfigMap
-    name: cluster-config
-    valuesKey: private_dnz_zone
-    targetPath: azure.dns.private_dnz_zone
-    
-  - kind: ConfigMap
-    name: cluster-config
-    valuesKey: dns_prefix
-    targetPath: dns.prefix
-
-  - kind: ConfigMap
-    name: cluster-config
-    valuesKey: dns_resource_group
-    targetPath: azure.dns.resource_group
-
-  - kind: ConfigMap
-    name: cluster-config
-    valuesKey: dns_subscription_id
-    targetPath: azure.dns.subscription_id
-
-  - kind: ConfigMap
-    name: cluster-config
-    valuesKey: azure_subscription_id
-    targetPath: azure.subscription_id
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: ohdsi_branch
-    targetPath: components.ohdsi.repository.branch
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: ohdsi_chart_version
-    targetPath: components.ohdsi.chart_version
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: secrets_distributor_chart_version
-    targetPath: components.secrets_distributor.chart_version
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: certmanager_branch
-    targetPath: components.cert_manager.repository.branch
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: certmanager_chart_version
-    targetPath: components.cert_manager.chart_version
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: trustmanager_chart_version
-    targetPath: components.trust_manager.chart_version
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: github_runner_branch
-    targetPath: components.github_runner.repository.branch
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: github_runner_chart_version
-    targetPath: components.github_runner.chart_version
-    
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: nginx_branch
-    targetPath: components.ingress_nginx.repository.branch
-    
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: nginx_chart_version
-    targetPath: components.ingress_nginx.chart_version
-    
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: aks_dns_chart_version
-    targetPath: components.aks_dns.chart_version
-    
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: configmap_transformer_chart_version
-    targetPath: components.configmap_transformer.chart_version
-    
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: keda_branch
-    targetPath: components.keda.repository.branch
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: keda_chart_version
-    targetPath: components.keda.chart_version
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: metrics_server_chart_version
-    targetPath: components.metrics_server.chart_version
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: metrics_server_chart_version
-    targetPath: components.metrics_server.chart_version
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: jupyter_chart_version
-    targetPath: components.jupyter_hub.chart_version
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: jupyter_branch
-    targetPath: components.jupyter_hub.repository.branch
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: analytics_workspace_management_chart_version
-    targetPath: components.analytics_workspace_management.chart_version
-
-  - kind: ConfigMap
-    name: deployment-config
-    valuesKey: analytics_workspace_management_branch
-    targetPath: components.analytics_workspace_management.repository.branch
-    
-  - kind: ConfigMap
-    name: environment-configuration
-    valuesKey: azure_state
-    targetPath: azure.state
-    
-  
-    
-
-  
-
-    
-    
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: azure_client_id
+      targetPath: azure.client_id
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: azure_keyvault_name
+      targetPath: azure.keyvault_name
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: azure_tenant_id
+      targetPath: azure.tenant_id
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: private_dnz_zone
+      targetPath: azure.dns.private_dnz_zone
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: dns_prefix
+      targetPath: dns.prefix
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: dns_resource_group
+      targetPath: azure.dns.resource_group
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: dns_subscription_id
+      targetPath: azure.dns.subscription_id
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: azure_subscription_id
+      targetPath: azure.subscription_id
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: ohdsi_branch
+      targetPath: components.ohdsi.repository.branch
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: ohdsi_chart_version
+      targetPath: components.ohdsi.chart_version
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: secrets_distributor_chart_version
+      targetPath: components.secrets_distributor.chart_version
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: certmanager_branch
+      targetPath: components.cert_manager.repository.branch
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: certmanager_chart_version
+      targetPath: components.cert_manager.chart_version
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: trustmanager_chart_version
+      targetPath: components.trust_manager.chart_version
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: github_runner_branch
+      targetPath: components.github_runner.repository.branch
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: github_runner_chart_version
+      targetPath: components.github_runner.chart_version
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: nginx_branch
+      targetPath: components.ingress_nginx.repository.branch
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: nginx_chart_version
+      targetPath: components.ingress_nginx.chart_version
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: aks_dns_chart_version
+      targetPath: components.aks_dns.chart_version
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: configmap_transformer_chart_version
+      targetPath: components.configmap_transformer.chart_version
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: keda_branch
+      targetPath: components.keda.repository.branch
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: keda_chart_version
+      targetPath: components.keda.chart_version
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: metrics_server_chart_version
+      targetPath: components.metrics_server.chart_version
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: metrics_server_chart_version
+      targetPath: components.metrics_server.chart_version
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: jupyter_chart_version
+      targetPath: components.jupyter_hub.chart_version
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: jupyter_branch
+      targetPath: components.jupyter_hub.repository.branch
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: analytics_workspace_management_chart_version
+      targetPath: components.analytics_workspace_management.chart_version
+    - kind: ConfigMap
+      name: deployment-config
+      valuesKey: analytics_workspace_management_branch
+      targetPath: components.analytics_workspace_management.repository.branch
+    - kind: ConfigMap
+      name: environment-configuration
+      valuesKey: azure_state
+      targetPath: azure.state
