@@ -6,6 +6,26 @@ In a AKS environment this is the only flux configuration that is added to the sy
 
 Originally this was pointing at other flux charts for [configuration](https://github.com/lsc-sde/iac-flux-lscsde-configuration) and [components](https://github.com/lsc-sde/iac-flux-lscsde-components) however flux is not suitable for flow control and so we cannot use it for feature toggling, hence it was replaced with a helm chart.
 
+When the main branch of this repository is created it will trigger a github action which will:
+* Calculate a semver version number
+* Create a release branch with the semver version
+* Update the submodules on the main repository
+
+This will in turn trigger github actions that will propagate those changes up the chain
+
+### Environmental Branches
+The following branches are environmental:
+| branch name | environment |
+| --- | --- |
+| prod | Production |
+| dev | Development |
+| main | Sandbox / Local |
+
+when we want to release to an environment we will do a pull request from the latest release branch into the relevant environment branch
+
+This will effectively update the references to the release branch on each of the apps and versions for the various helm charts. This means that if we need to patch an issue in a production release for a specific component we can identify the branch in question, we can then create a branch from the relevant release branch, fix the issue, test on environments and then raise a pull request into the release version branch, then merge in those changes into the production environment.
+
+## Setting up a local environment
 ### microk8s Installation
 To install locally it is best to use microk8s which can be installed using the following command:
 
