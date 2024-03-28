@@ -2,7 +2,9 @@
 Flux Configuration for LSC SDE Components
 
 ## Developer Guide
-To test the changes, ensure that you are on your developer machine and that the context is set correctly to your local instance please amend the following script to use the target branch:
+In a AKS environment this is the only flux configuration that is added to the system, this in turn calls the [Core LSCSDE Helm Chart](../../helm/lscsde-flux/) which will in turn install the relevant components.
+
+Originally this was pointing at other flux charts for [configuration](https://github.com/lsc-sde/iac-flux-lscsde-configuration) and [components](https://github.com/lsc-sde/iac-flux-lscsde-components) however flux is not suitable for flow control and so we cannot use it for feature toggling, hence it was replaced with a helm chart.
 
 ### microk8s Installation
 To install locally it is best to use microk8s which can be installed using the following command:
@@ -75,7 +77,6 @@ This will require a user called **ohdsi@cluster.lsc-sde.local** with permissions
 
 ### Configure Flux for LSCSDE
 ```bash
-kubectl config use-context docker-desktop
 kubectl create namespace lscsde
 kubectl create namespace lscsde-config
 flux create source git lscsde --url="https://github.com/lsc-sde/iac-flux-lscsde" --branch=main --namespace=lscsde
