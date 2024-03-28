@@ -17,7 +17,7 @@ data:
   configmap_transformer_chart_version: "0.2.2"
   nginx_branch: "release/0.1.52"
   nginx_chart_version: "4.9.1"
-  keda_branch: "release/0.1.37"
+  keda_branch: "release/0.1.38"
   keda_chart_version: "2.13.1"
   keycloak_branch: "release/0.1.59"
   jupyter_branch: "release/0.2.60"
