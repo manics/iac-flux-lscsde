@@ -4,7 +4,7 @@ metadata:
   name: deployment-config
 data:
   ohdsi_branch: "release/0.1.54"
-  ohdsi_chart_version: "0.1.28"
+  ohdsi_chart_version: "0.1.29"
   secrets_distributor_chart_version: "0.2.2"
   certmanager_branch: "release/0.1.26"
   certmanager_chart_version: "v1.14.2"
