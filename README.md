@@ -15,6 +15,7 @@ This will in turn trigger github actions that will propagate those changes up th
 
 ### Environmental Branches
 The following branches are environmental:
+
 | branch name | environment |
 | --- | --- |
 | prod | Production |
