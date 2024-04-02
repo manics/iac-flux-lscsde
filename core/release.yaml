@@ -10,7 +10,7 @@ spec:
   chart:
     spec:
       chart: lscsde-flux
-      version: 0.1.16
+      version: 0.1.17
       sourceRef:
         kind: HelmRepository
         name: core
@@ -150,11 +150,9 @@ spec:
       name: environment-configuration
       valuesKey: azure_state
       targetPath: azure.state
-
     - kind: ConfigMap
       name: deployment-config
       valuesKey: guacamole_chart_version
       targetPath: components.guacamole.chart_version
-
     - kind: ConfigMap
       name: environment-component-config
