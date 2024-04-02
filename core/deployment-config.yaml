@@ -1,0 +1,28 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: deployment-config
+data:
+  ohdsi_branch: "release/0.1.55"
+  ohdsi_chart_version: "0.1.30"
+  secrets_distributor_chart_version: "0.2.4"
+  certmanager_branch: "release/0.1.27"
+  certmanager_chart_version: "v1.14.2"
+  trustmanager_chart_version: "0.8.0"
+  github_runner_branch: "release/0.1.54"
+  github_runner_chart_version: "0.1.26"
+  aks_dns_branch: main
+  aks_dns_chart_version: "0.2.8"
+  configmap_transformer_branch: main
+  configmap_transformer_chart_version: "0.2.4"
+  nginx_branch: "release/0.1.53"
+  nginx_chart_version: "4.9.1"
+  keda_branch: "release/0.1.39"
+  keda_chart_version: "2.13.1"
+  keycloak_branch: "release/0.1.60"
+  jupyter_branch: "release/0.2.62"
+  jupyter_chart_version: "3.2.1"
+  analytics_workspace_management_chart_version: "0.1.13"
+  analytics_workspace_management_branch: "release/0.1.10"
+  metrics_server_chart_version: "3.12.0"
+  guacamole_chart_version: "0.1.8"

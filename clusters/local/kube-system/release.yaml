@@ -1,0 +1,25 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: csi-secrets-store
+spec:
+  targetNamespace: kube-system
+  releaseName: csi-secrets-store
+  chart:
+    spec:
+      chart: secrets-store-csi-driver
+      sourceRef:
+        kind: HelmRepository
+        name: secrets-store-csi-driver
+        namespace: kube-system
+  interval: 5m0s
+  install:
+    remediation:
+      retries: -1
+    disableWait: true
+    disableWaitForJobs: true
+  upgrade:
+    remediation:
+      retries: -1
+    disableWait: true
+    disableWaitForJobs: true
