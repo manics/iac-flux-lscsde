@@ -25,3 +25,4 @@ data:
   analytics_workspace_management_chart_version: "0.1.13"
   analytics_workspace_management_branch: "release/0.1.10"
   metrics_server_chart_version: "3.12.0"
+  guacamole_chart_version: "0.1.6"

@@ -5,6 +5,9 @@ configMapGenerator:
   - name: secret-distributor-config
     files:
       - values.yaml=secret-distributor-config.yaml
+  - name: environment-component-config
+    files:
+      - values.yaml=environment-component-config.yaml
 generatorOptions:
   disableNameSuffixHash: true
 resources:
