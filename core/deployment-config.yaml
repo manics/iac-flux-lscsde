@@ -22,7 +22,7 @@ data:
   keycloak_branch: "release/0.1.60"
   jupyter_branch: "release/0.2.63"
   jupyter_chart_version: "3.2.1"
-  analytics_workspace_management_chart_version: "0.1.16"
+  analytics_workspace_management_chart_version: "0.1.17"
   analytics_workspace_management_branch: "release/0.1.10"
   metrics_server_chart_version: "3.12.0"
   guacamole_chart_version: "0.1.8"
