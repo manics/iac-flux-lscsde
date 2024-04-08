@@ -2,7 +2,7 @@
 Flux Configuration for LSC SDE Components
 
 ## Developer Guide
-In a AKS environment this is the only flux configuration that is added to the system, this in turn calls the [Core LSCSDE Helm Chart](../../helm/lscsde-flux/) which will in turn install the relevant components.
+In a AKS environment this is the only flux configuration that is added to the system, this in turn calls the [Core LSCSDE Helm Chart](https://github.com/lsc-sde/iac-helm-lscsde-flux) which will in turn install the relevant components.
 
 Originally this was pointing at other flux charts for [configuration](https://github.com/lsc-sde/iac-flux-lscsde-configuration) and [components](https://github.com/lsc-sde/iac-flux-lscsde-components) however flux is not suitable for flow control and so we cannot use it for feature toggling, hence it was replaced with a helm chart.
 
