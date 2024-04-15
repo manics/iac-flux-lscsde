@@ -4,3 +4,5 @@ metadata:
   name: secrets-storage
 spec:
   storageClassName: secrets-storage
+  accessModes:
+  - ReadOnlyMany
