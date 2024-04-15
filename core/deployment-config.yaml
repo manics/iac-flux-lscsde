@@ -5,7 +5,7 @@ metadata:
 data:
   ohdsi_branch: "release/0.1.59"
   ohdsi_chart_version: "0.1.30"
-  secrets_distributor_chart_version: "0.2.8"
+  secrets_distributor_chart_version: "0.2.9"
   certmanager_branch: "release/0.1.27"
   certmanager_chart_version: "v1.14.2"
   trustmanager_chart_version: "0.8.0"
@@ -20,7 +20,7 @@ data:
   keda_branch: "release/0.1.39"
   keda_chart_version: "2.13.1"
   keycloak_branch: "release/0.1.60"
-  jupyter_branch: "release/0.2.66"
+  jupyter_branch: "release/0.2.67"
   jupyter_chart_version: "3.2.1"
   analytics_workspace_management_chart_version: "0.1.22"
   analytics_workspace_management_branch: "release/0.1.11"
