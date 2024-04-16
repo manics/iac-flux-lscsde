@@ -1,0 +1,24 @@
+
+components:
+  aks_dns:
+    chart_version: "0.2.8"
+  analytics_workspace_management:
+    chart_version: "0.1.22"
+  cert_manager:
+    chart_version: "v1.14.2"
+  github_runner:
+    chart_version: "0.1.26"
+  ingress_nginx:
+    chart_version: "4.9.1"
+  jupyter_hub:
+    chart_version: "3.2.1"
+  keda:
+    chart_version: "2.13.1"
+  metrics_server:
+    chart_version: "3.12.0"
+  ohdsi:
+    chart_version: "0.1.30"
+  secrets_distributor:
+    chart_version: "0.2.10"
+  guacamole:
+    chart_version: "0.1.9"
