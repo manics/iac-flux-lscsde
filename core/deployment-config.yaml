@@ -16,7 +16,7 @@ data:
   aks_dns_chart_version: "0.2.8"
   configmap_transformer_branch: main
   configmap_transformer_chart_version: "0.2.6"
-  nginx_branch: "release/0.1.53"
+  nginx_branch: "release/0.1.55"
   nginx_chart_version: "4.9.1"
   keda_branch: "release/0.1.41"
   keda_chart_version: "2.13.1"
