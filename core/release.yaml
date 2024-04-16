@@ -80,6 +80,10 @@ spec:
       targetPath: components.secrets_distributor.chart_version
     - kind: ConfigMap
       name: deployment-config
+      valuesKey: secrets_distributor_branch
+      targetPath: components.secrets_distributor.repository.branch
+    - kind: ConfigMap
+      name: deployment-config
       valuesKey: certmanager_branch
       targetPath: components.cert_manager.repository.branch
     - kind: ConfigMap
@@ -156,3 +160,8 @@ spec:
       targetPath: components.guacamole.chart_version
     - kind: ConfigMap
       name: environment-component-config
+
+    - kind: ConfigMap
+      name: secret-distributor-config
+      valuesKey: values.yaml
+      targetPath: components.secrets_distributor.config
