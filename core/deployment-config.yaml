@@ -3,7 +3,7 @@ kind: ConfigMap
 metadata:
   name: deployment-config
 data:
-  ohdsi_branch: "release/0.1.60"
+  ohdsi_branch: "release/0.1.61"
   ohdsi_chart_version: "0.1.30"
   secrets_distributor_chart_version: "0.2.10"
   secrets_distributor_branch: "release/0.1.3"
