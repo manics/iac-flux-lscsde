@@ -10,7 +10,7 @@ spec:
   chart:
     spec:
       chart: lscsde-flux
-      version: 0.1.23
+      version: 0.1.24
       sourceRef:
         kind: HelmRepository
         name: core
@@ -66,18 +66,14 @@ spec:
       name: cluster-config
       valuesKey: azure_subscription_id
       targetPath: azure.subscription_id
-    
     - kind: ConfigMap
       name: flux-config
-
     - kind: ConfigMap
       name: helm-config
-
     - kind: ConfigMap
       name: environment-configuration
       valuesKey: azure_state
       targetPath: azure.state
-
     - kind: ConfigMap
       name: secret-distributor-config
       valuesKey: values.yaml
