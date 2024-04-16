@@ -10,7 +10,7 @@ spec:
   chart:
     spec:
       chart: lscsde-flux
-      version: 0.1.20
+      version: 0.1.21
       sourceRef:
         kind: HelmRepository
         name: core
@@ -160,7 +160,6 @@ spec:
       targetPath: components.guacamole.chart_version
     - kind: ConfigMap
       name: environment-component-config
-
     - kind: ConfigMap
       name: secret-distributor-config
       valuesKey: values.yaml
