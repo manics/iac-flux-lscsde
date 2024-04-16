@@ -8,6 +8,8 @@ configMapGenerator:
   - name: helm-config
     files:
       - values.yaml=helm-config.yaml
+generatorOptions:
+  disableNameSuffixHash: true
 resources:
 - repository.yaml
 - release.yaml
