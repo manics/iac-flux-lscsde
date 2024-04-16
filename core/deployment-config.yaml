@@ -6,7 +6,7 @@ data:
   ohdsi_branch: "release/0.1.59"
   ohdsi_chart_version: "0.1.30"
   secrets_distributor_chart_version: "0.2.10"
-  secrets_distributor_branch: "release/0.1.2"
+  secrets_distributor_branch: "release/0.1.3"
   certmanager_branch: "release/0.1.27"
   certmanager_chart_version: "v1.14.2"
   trustmanager_chart_version: "0.8.0"
