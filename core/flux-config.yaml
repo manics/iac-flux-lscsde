@@ -1,0 +1,35 @@
+
+components:
+  aks_dns:
+    repository:
+      branch: main
+  analytics_workspace_management:
+    repository:
+      branch: "release/0.1.14"
+  cert_manager:
+    repository:
+      branch: "release/0.1.29"
+  github_runner:
+    repository:
+      branch: "release/0.1.54"
+  ingress_nginx:
+    repository:
+      branch: "release/0.1.55"
+  jupyter_hub:
+    repository:
+      branch: "release/0.2.69"
+  keda:
+    repository:
+      branch: "release/0.1.41"
+  metrics_server:
+    repository:
+      branch: main
+  ohdsi:
+    repository:
+      branch: "release/0.1.61"
+  secrets_distributor:
+    repository:
+      branch: "release/0.1.4"
+  guacamole:
+    repository:
+      branch: main
