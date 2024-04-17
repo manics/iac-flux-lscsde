@@ -19,6 +19,6 @@ components:
   ohdsi:
     chart_version: "0.1.32"
   secrets_distributor:
-    chart_version: "0.2.10"
+    chart_version: "0.2.11"
   guacamole:
     chart_version: "0.1.10"
