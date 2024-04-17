@@ -21,4 +21,4 @@ components:
   secrets_distributor:
     chart_version: "0.2.10"
   guacamole:
-    chart_version: "0.1.9"
+    chart_version: "0.1.10"
