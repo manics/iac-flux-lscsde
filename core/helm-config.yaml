@@ -7,7 +7,7 @@ components:
   cert_manager:
     chart_version: "v1.14.2"
   github_runner:
-    chart_version: "0.1.26"
+    chart_version: "0.1.28"
   ingress_nginx:
     chart_version: "4.9.1"
   jupyter_hub:
