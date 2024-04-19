@@ -1,0 +1,38 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: lscsde-namespaces
+  annotations:
+    lsc-sde.nhs.uk/definitionVersion: "1.0.1"
+spec:
+  targetNamespace: lscsde-config
+  releaseName: lscsde-namespaces
+  chart:
+    spec:
+      chart: lscsde-namespaces
+      version: 0.1.28
+      sourceRef:
+        kind: HelmRepository
+        name: core
+        namespace: lscsde-config
+  interval: 5m0s
+  install:
+    remediation:
+      retries: -1
+    disableWait: true
+    disableWaitForJobs: true
+  upgrade:
+    remediation:
+      retries: -1
+    disableWait: true
+    disableWaitForJobs: true
+  rollback:
+    cleanupOnFail: false
+    disableWait: true
+    disableWaitForJobs: true
+  uninstall:
+    deletionPropagation: orphan
+    disableWait: true
+  valuesFrom:
+    - kind: ConfigMap
+      name: environment-component-config
