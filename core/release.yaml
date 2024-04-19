@@ -12,7 +12,7 @@ spec:
   chart:
     spec:
       chart: lscsde-flux
-      version: 0.1.30
+      version: 0.1.31
       sourceRef:
         kind: HelmRepository
         name: core
