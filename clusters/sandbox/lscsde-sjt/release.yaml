@@ -6,7 +6,7 @@ metadata:
     lsc-sde.nhs.uk/definitionVersion: "1.0.1"
 spec:
   dependsOn:
-  - name: lscsde-flux-namespaces-sjt
+  - name: lscsde-namespaces-sjt
   targetNamespace: lscsde-config
   releaseName: lscsde-flux-sjt
   chart:
