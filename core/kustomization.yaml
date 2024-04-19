@@ -13,3 +13,4 @@ generatorOptions:
 resources:
 - repository.yaml
 - release.yaml
+- release-namespaces.yaml

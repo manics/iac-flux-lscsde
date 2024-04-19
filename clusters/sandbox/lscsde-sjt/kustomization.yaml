@@ -9,4 +9,5 @@ generatorOptions:
   disableNameSuffixHash: true
 resources:
 - configuration.yaml
+- release-namespaces.yaml
 - release.yaml

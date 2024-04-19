@@ -5,6 +5,8 @@ metadata:
   annotations:
     lsc-sde.nhs.uk/definitionVersion: "1.0.1"
 spec:
+  dependsOn:
+  - name: lscsde-namespaces
   targetNamespace: lscsde-config
   releaseName: lscsde-flux
   chart:
@@ -78,3 +80,5 @@ spec:
       name: secret-distributor-config
       valuesKey: values.yaml
       targetPath: components.secrets_distributor.config
+    - kind: ConfigMap
+      name: environment-component-config
