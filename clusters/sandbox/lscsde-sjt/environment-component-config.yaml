@@ -1,4 +1,6 @@
-suffix: "-sjt"
+naming:
+  suffix: "-sjt"
+
 components:
   guacamole:
     state: disabled
