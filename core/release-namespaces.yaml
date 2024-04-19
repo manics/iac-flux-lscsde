@@ -21,6 +21,7 @@ spec:
       retries: -1
     disableWait: true
     disableWaitForJobs: true
+    createNamespace: true
   upgrade:
     remediation:
       retries: -1
