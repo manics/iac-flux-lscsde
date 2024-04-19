@@ -1,0 +1,82 @@
+apiVersion: helm.toolkit.fluxcd.io/v2beta1
+kind: HelmRelease
+metadata:
+  name: lscsde-flux-sjt
+  annotations:
+    lsc-sde.nhs.uk/definitionVersion: "1.0.1"
+spec:
+  targetNamespace: lscsde-config
+  releaseName: lscsde-flux-sjt
+  chart:
+    spec:
+      chart: lscsde-flux
+      version: 0.1.25
+      sourceRef:
+        kind: HelmRepository
+        name: core
+        namespace: lscsde-config
+  interval: 5m0s
+  install:
+    remediation:
+      retries: -1
+    disableWait: true
+    disableWaitForJobs: true
+  upgrade:
+    remediation:
+      retries: -1
+    disableWait: true
+    disableWaitForJobs: true
+  rollback:
+    cleanupOnFail: false
+    disableWait: true
+    disableWaitForJobs: true
+  uninstall:
+    deletionPropagation: orphan
+    disableWait: true
+  valuesFrom:
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: azure_client_id
+      targetPath: azure.client_id
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: azure_keyvault_name
+      targetPath: azure.keyvault_name
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: azure_tenant_id
+      targetPath: azure.tenant_id
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: private_dnz_zone
+      targetPath: azure.dns.private_dnz_zone
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: dns_prefix
+      targetPath: dns.prefix
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: dns_resource_group
+      targetPath: azure.dns.resource_group
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: dns_subscription_id
+      targetPath: azure.dns.subscription_id
+    - kind: ConfigMap
+      name: cluster-config
+      valuesKey: azure_subscription_id
+      targetPath: azure.subscription_id
+    - kind: ConfigMap
+      name: flux-config
+    - kind: ConfigMap
+      name: helm-config
+    - kind: ConfigMap
+      name: environment-configuration-sjt
+      valuesKey: azure_state
+      targetPath: azure.state
+    - kind: ConfigMap
+      name: secret-distributor-config
+      valuesKey: values.yaml
+      targetPath: components.secrets_distributor.config
+    - kind: ConfigMap
+      name: environment-component-config-sjt
