@@ -6,13 +6,13 @@ metadata:
     lsc-sde.nhs.uk/definitionVersion: "1.0.1"
 spec:
   dependsOn:
-  - name: lscsde-namespaces
+    - name: lscsde-namespaces
   targetNamespace: lscsde-config
   releaseName: lscsde-flux
   chart:
     spec:
       chart: lscsde-flux
-      version: 0.1.29
+      version: 0.1.30
       sourceRef:
         kind: HelmRepository
         name: core
