@@ -89,3 +89,4 @@ This will effectively update the references to the release branch on each of the
 For instructions setting up a local environment please refer to the guide at:
 
 https://lsc-sde.github.io/lsc-sde/Secure-Data-Environment/Developers/New-Environment.html
+
