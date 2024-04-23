@@ -1,4 +1,5 @@
 naming:
+  namespaceSuffix: "-sjt"
   suffix: ""
 
 components:
