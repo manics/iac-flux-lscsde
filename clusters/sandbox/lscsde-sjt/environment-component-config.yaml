@@ -1,5 +1,5 @@
 naming:
-  suffix: "-sjt"
+  suffix: ""
 
 components:
   guacamole:
@@ -18,11 +18,13 @@ components:
     state: disabled
   jupyter_hub:
     state: disabled
+    namespace: jupyterhub-sjt
   keda:
     state: disabled
   metrics_server:
     state: disabled
   ohdsi:
     state: enabled
+    namespace: ohdsi-sjt
   secrets_distributor:
     state: disabled
