@@ -1,6 +1,5 @@
 naming:
-  namespaceSuffix: "-sjt"
-  suffix: ""
+  suffix: "-sjt"
 
 components:
   guacamole:
