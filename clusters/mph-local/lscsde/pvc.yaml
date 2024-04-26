@@ -3,7 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: secrets-storage
 spec:
-  storageClassName: secrets-storage
+  storageClassName: local-path #secrets-storage
   accessModes:
   - ReadOnlyMany
   resources:

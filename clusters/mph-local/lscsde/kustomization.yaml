@@ -12,5 +12,5 @@ generatorOptions:
   disableNameSuffixHash: true
 resources:
 - configuration.yaml
-- storageclass.yaml
+#- storageclass.yaml
 - pvc.yaml
