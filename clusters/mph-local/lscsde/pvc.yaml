@@ -6,3 +6,6 @@ spec:
   storageClassName: secrets-storage
   accessModes:
   - ReadOnlyMany
+  resources:
+    requests:
+      storage: 10Gi
