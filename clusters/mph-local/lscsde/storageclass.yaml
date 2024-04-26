@@ -5,5 +5,5 @@ metadata:
 provisioner: microk8s.io/hostpath
 reclaimPolicy: Delete
 parameters:
-  pvDir: /tmp/secrets
+  pvDir: /mnt/secrets
 volumeBindingMode: WaitForFirstConsumer
