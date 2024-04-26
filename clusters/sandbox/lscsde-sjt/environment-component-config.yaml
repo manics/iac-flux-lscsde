@@ -17,7 +17,7 @@ components:
   ingress_nginx:
     state: disabled
   jupyter_hub:
-    state: disabled
+    state: enabled
     namespace: jupyterhub-sjt
   keda:
     state: disabled
