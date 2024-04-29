@@ -13,4 +13,3 @@ generatorOptions:
 resources:
 - configuration.yaml
 #- storageclass.yaml
-- pvc.yaml
