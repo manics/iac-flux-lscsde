@@ -5,4 +5,4 @@ resources:
 - kube-system
 - serviceaccount.yaml
 - ../../core
-- secrets-distributor
+#- secrets-distributor
