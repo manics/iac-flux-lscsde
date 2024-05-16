@@ -28,3 +28,7 @@ components:
     namespace: ohdsi-sjt
   secrets_distributor:
     state: disabled
+  workspace_definitions:
+    state: disabled
+    repository:
+      path: sandbox

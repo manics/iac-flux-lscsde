@@ -1,3 +1,6 @@
 components:
   guacamole:
     state: enabled
+  workspace_definitions:
+    repository:
+      path: sandbox
