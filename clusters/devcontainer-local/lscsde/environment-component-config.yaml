@@ -1,3 +1,6 @@
 components:
   guacamole:
     state: disabled
+  workspace_definitions:
+    repository:
+      path: local
