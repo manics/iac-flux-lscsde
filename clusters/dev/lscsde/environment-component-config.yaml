@@ -4,3 +4,8 @@ components:
   workspace_definitions:
     repository:
       path: staging
+      requiresAuth: true
+      url: https://github.com/lsc-sde/iac-flux-workspace-definitions
+      secret:
+        usernameKey: WorkspaceReposPatUser
+        passwordKey: WorkspaceReposPatToken
