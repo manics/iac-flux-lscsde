@@ -3,7 +3,7 @@ components:
     state: disabled
   workspace_definitions:
     repository:
-      path: staging
+      path: dev
       requiresAuth: true
       url: https://github.com/lsc-sde/iac-flux-workspace-definitions
       secret:
