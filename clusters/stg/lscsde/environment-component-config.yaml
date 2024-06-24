@@ -4,9 +4,6 @@ components:
   workspace_definitions:
     repository:
       path: staging
-  workspace_definitions:
-    repository:
-      path: staging
       requiresAuth: true
       url: https://github.com/lsc-sde/iac-flux-workspace-definitions
       secret:
