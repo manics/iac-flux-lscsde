@@ -1,3 +1,11 @@
 components:
   guacamole:
     state: disabled
+  workspace_definitions:
+    repository:
+      path: production
+      requiresAuth: true
+      url: https://github.com/lsc-sde/iac-flux-workspace-definitions
+      secret:
+        usernameKey: WorkspaceReposPatUser
+        passwordKey: WorkspaceReposPatToken
