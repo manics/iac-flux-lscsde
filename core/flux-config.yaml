@@ -35,4 +35,4 @@ components:
       branch: release/0.1.6
   superset:
     repository:
-      branch: release/0.1.2
+      branch: release/0.1.3
