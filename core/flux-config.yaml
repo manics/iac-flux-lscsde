@@ -33,3 +33,6 @@ components:
   guacamole:
     repository:
       branch: release/0.1.6
+  superset:
+    repository:
+      branch: main
