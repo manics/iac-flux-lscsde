@@ -31,3 +31,4 @@ data:
   jupyterhub_users_role: "jupyter-users"
   jupyterhub_admins_role: "jupyter-admins"
   ohdsi_client_id: "28dcbe4c-77d0-4459-b848-e6d4c7bded65"
+  superset_client_id: "28dcbe4c-77d0-4459-b848-e6d4c7bded65"
