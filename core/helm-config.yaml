@@ -9,7 +9,7 @@ components:
   github_runner:
     chart_version: "0.1.28"
   ingress_nginx:
-    chart_version: "4.9.1"
+    chart_version: "4.11.1"
   jupyter_hub:
     chart_version: "3.2.1"
   keda:
