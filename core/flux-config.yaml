@@ -8,7 +8,7 @@ components:
       branch: "release/0.1.15"
   cert_manager:
     repository:
-      branch: "release/0.1.31"
+      branch: "release/0.1.34"
   github_runner:
     repository:
       branch: "release/0.1.56"
@@ -17,7 +17,7 @@ components:
       branch: "release/0.1.56"
   jupyter_hub:
     repository:
-      branch: "release/0.2.96"
+      branch: "release/0.2.98"
   keda:
     repository:
       branch: "release/0.1.42"
@@ -26,7 +26,7 @@ components:
       branch: main
   ohdsi:
     repository:
-      branch: "release/0.1.65"
+      branch: "release/0.1.67"
   secrets_distributor:
     repository:
       branch: "release/0.1.5"
