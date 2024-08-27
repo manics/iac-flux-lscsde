@@ -36,3 +36,6 @@ components:
   superset:
     repository:
       branch: release/0.1.16
+  rabbitmq:
+    repository:
+      branch: release/0.1.2
