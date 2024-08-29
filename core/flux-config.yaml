@@ -38,4 +38,4 @@ components:
       branch: release/0.1.16
   rabbitmq:
     repository:
-      branch: release/0.1.17
+      branch: release/0.1.18
