@@ -36,3 +36,6 @@ components:
   superset:
     repository:
       branch: release/0.1.16
+  observability-metrics:
+    repository:
+      branch: release/0.1.3
