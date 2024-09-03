@@ -39,3 +39,6 @@ components:
   rabbitmq:
     repository:
       branch: release/0.1.18
+  observability-metrics:
+    repository:
+      branch: release/0.1.11
