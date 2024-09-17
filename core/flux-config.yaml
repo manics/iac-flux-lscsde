@@ -39,3 +39,6 @@ components:
   observability-metrics:
     repository:
       branch: release/0.1.36
+  keycloak_branch:
+    repository:
+      branch: release/0.1.61
