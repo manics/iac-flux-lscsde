@@ -41,4 +41,4 @@ components:
       branch: release/0.1.42
   keycloak_branch:
     repository:
-      branch: release/0.1.61
+      branch: release/0.1.63
