@@ -36,9 +36,13 @@ components:
   superset:
     repository:
       branch: release/0.1.16
+  keycloak_branch:
+    repository:
+      branch: release/0.1.63
   rabbitmq:
     repository:
       branch: release/0.1.18
   observability_metrics:
     repository:
       branch: release/0.1.42
+      
