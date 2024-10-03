@@ -73,6 +73,8 @@ spec:
     - kind: ConfigMap
       name: helm-config
     - kind: ConfigMap
+      name: image-config
+    - kind: ConfigMap
       name: environment-configuration
       valuesKey: azure_state
       targetPath: azure.state

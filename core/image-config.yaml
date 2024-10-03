@@ -1,0 +1,3 @@
+components:
+  keycloak:
+    image: lscsde/awms-keycloak:0.1.6
