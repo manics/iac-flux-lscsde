@@ -1,3 +1,5 @@
 components:
   keycloak:
     image: lscsde/awms-keycloak:0.1.6
+  awms_guacamole:
+    image: lscsde/awms-guacamole-operator:0.1.7
