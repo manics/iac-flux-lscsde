@@ -1,6 +1,6 @@
 components:
   guacamole:
-    state: disabled
+    state: enabled
   workspace_definitions:
     repository:
       path: dev
