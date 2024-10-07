@@ -47,4 +47,4 @@ components:
       branch: release/0.1.69
   awms_guacamole:
     repository:
-      branch: release/0.1.16
+      branch: release/0.1.17
