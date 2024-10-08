@@ -32,7 +32,7 @@ components:
       branch: "release/0.1.5"
   guacamole:
     repository:
-      branch: release/0.1.16
+      branch: release/0.1.17
   superset:
     repository:
       branch: release/0.1.16
