@@ -17,7 +17,7 @@ components:
       branch: "release/0.1.59"
   jupyter_hub:
     repository:
-      branch: "release/0.2.101"
+      branch: "release/0.2.102"
   keda:
     repository:
       branch: "release/0.1.42"
