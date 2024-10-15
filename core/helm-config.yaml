@@ -1,7 +1,7 @@
 
 components:
   aks_dns:
-    chart_version: "0.2.11"
+    chart_version: "0.2.12"
   analytics_workspace_management:
     chart_version: "0.1.35"
   cert_manager:
