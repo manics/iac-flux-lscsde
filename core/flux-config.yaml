@@ -5,7 +5,7 @@ components:
       branch: main
   analytics_workspace_management:
     repository:
-      branch: "release/0.1.16"
+      branch: "release/0.1.17"
   cert_manager:
     repository:
       branch: "release/0.1.37"
