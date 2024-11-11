@@ -50,4 +50,4 @@ components:
       branch: release/0.1.27
   observability-metrics:
     repository:
-      branch: release/0.1.43
+      branch: release/0.1.44
