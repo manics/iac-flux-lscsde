@@ -19,7 +19,7 @@ components:
   ohdsi:
     chart_version: "0.1.33"
   secrets_distributor:
-    chart_version: "0.2.12"
+    chart_version: "0.2.13"
   guacamole:
     chart_version: "0.1.15"
   awms_guacamole:
