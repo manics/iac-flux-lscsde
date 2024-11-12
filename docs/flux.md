@@ -3,6 +3,7 @@ title: FluxCD
 parent: Supporting Services
 grand_parent: Architecture
 layout: page
+has_children: true
 ---
 
 [FluxCD](https://fluxcd.io/) is a set of continuous and progressive delivery solutions for Kubernetes that are open and extensible.
