@@ -20,7 +20,7 @@ components:
       branch: "release/0.2.105"
   keda:
     repository:
-      branch: "release/0.1.43"
+      branch: "release/0.1.44"
   metrics_server:
     repository:
       branch: main
