@@ -8,7 +8,7 @@ components:
       branch: "release/0.1.19"
   cert_manager:
     repository:
-      branch: "release/0.1.39"
+      branch: "release/0.1.40"
   github_runner:
     repository:
       branch: "release/0.1.56"
