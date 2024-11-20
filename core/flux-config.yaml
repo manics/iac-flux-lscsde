@@ -44,7 +44,7 @@ components:
       branch: release/0.1.42
   keycloak:
     repository:
-      branch: release/0.1.71
+      branch: release/0.1.72
   awms_guacamole:
     repository:
       branch: release/0.1.28
