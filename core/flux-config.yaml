@@ -14,7 +14,7 @@ components:
       branch: "release/0.1.56"
   ingress_nginx:
     repository:
-      branch: "release/0.1.62"
+      branch: "release/0.1.63"
   jupyter_hub:
     repository:
       branch: "release/0.2.107"
