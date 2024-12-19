@@ -3,4 +3,4 @@ components:
     state: disabled
   workspace_definitions:
     repository:
-      path: local
+      path: test
