@@ -8,14 +8,40 @@ resources:
 - ../../core
 
 # https://fluxcd.io/flux/faq/#are-there-two-kustomization-types
+
+# Can't patch a nested resource, need to patch the resource that creates the nested resource
+# https://github.com/fluxcd/kustomize-controller/issues/1000
+# https://github.com/fluxcd/flux2/discussions/2744
+
+# flux tree kustomization -nlscsde lscsde-cluster-config
+#   HelmRelease/lscsde-config/lscsde-flux
+#     Kustomization/lscsde-config/certmanager
+
 patches:
-  - patch: |-
+  - patch: |
       apiVersion: helm.toolkit.fluxcd.io/v2
       kind: HelmRelease
       metadata:
-        name: cert-manager
-        namespace: test-cert-manager-test
+        name: lscsde-flux
+        namespace: lscsde-config
       spec:
-        values:
-          webhook:
-            hostNetwork: false
+        postRenderers:
+          - kustomize:
+              patchesStrategicMerge:
+                - apiVersion: kustomize.toolkit.fluxcd.io/v1
+                  kind: Kustomization
+                  metadata:
+                    name: certmanager
+                    namespace: lscsde-config
+                  spec:
+                    patches:
+                      - patch: |
+                          apiVersion: helm.toolkit.fluxcd.io/v2
+                          kind: HelmRelease
+                          metadata:
+                            name: cert-manager
+                            namespace: test-cert-manager-test
+                          spec:
+                            values:
+                              webhook:
+                                hostNetwork: false
