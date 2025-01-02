@@ -3,7 +3,7 @@ components:
   aks_dns:
     chart_version: "0.2.13"
   analytics_workspace_management:
-    chart_version: "0.1.43"
+    chart_version: "0.1.44"
   cert_manager:
     chart_version: "v1.14.2"
   github_runner:
