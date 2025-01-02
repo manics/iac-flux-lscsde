@@ -41,7 +41,7 @@ patches:
                             kind: HelmRelease
                             metadata:
                               name: cert-manager
-                              namespace: test-cert-manager-test
+                              namespace: cert-manager
                             spec:
                               values:
                                 webhook:
