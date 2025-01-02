@@ -36,18 +36,21 @@ patches:
                       # namespace: lscsde-config
                     spec:
                       patches:
-                        - patch: |
-                            # apiVersion: helm.toolkit.fluxcd.io/v2beta1
-                            # kind: HelmRelease
-                            # metadata:
-                            #   name: cert-manager
-                            #   namespace: cert-manager
-                            spec:
-                              values:
-                                webhook:
-                                  hostNetwork: false
+                        - patch: |-
+                            - op: replace
+                              path: /spec/values/webhook/hostNetwork
+                              value: false
                           target:
-                            group: helm.toolkit.fluxcd.io
                             kind: HelmRelease
                             name: cert-manager
                             namespace: cert-manager
+#                         - patch: |
+#                             apiVersion: helm.toolkit.fluxcd.io/v2beta1
+#                             kind: HelmRelease
+#                             metadata:
+#                               name: cert-manager
+#                               namespace: cert-manager
+#                             spec:
+#                               values:
+#                                 webhook:
+#                                   hostNetwork: false
