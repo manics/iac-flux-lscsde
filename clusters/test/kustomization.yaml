@@ -33,7 +33,7 @@ patches:
                     kind: Kustomization
                     metadata:
                       name: certmanager
-                      namespace: lscsde-config
+                      # namespace: lscsde-config
                     spec:
                       patches:
                         - patch: |
