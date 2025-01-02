@@ -37,12 +37,17 @@ patches:
                     spec:
                       patches:
                         - patch: |
-                            apiVersion: helm.toolkit.fluxcd.io/v2beta1
-                            kind: HelmRelease
-                            metadata:
-                              name: cert-manager
-                              namespace: cert-manager
+                            # apiVersion: helm.toolkit.fluxcd.io/v2beta1
+                            # kind: HelmRelease
+                            # metadata:
+                            #   name: cert-manager
+                            #   namespace: cert-manager
                             spec:
                               values:
                                 webhook:
                                   hostNetwork: false
+                          target:
+                            group: helm.toolkit.fluxcd.io
+                            kind: HelmRelease
+                            name: cert-manager
+                            namespace: cert-manager
