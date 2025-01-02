@@ -43,7 +43,6 @@ patches:
                           target:
                             kind: HelmRelease
                             name: cert-manager
-                            namespace: cert-manager-nonexistent
 #                         - patch: |
 #                             apiVersion: helm.toolkit.fluxcd.io/v2beta1
 #                             kind: HelmRelease
