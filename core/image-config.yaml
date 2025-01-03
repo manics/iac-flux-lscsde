@@ -3,3 +3,5 @@ components:
     image: lscsde/awms-keycloak:0.1.9
   awms_guacamole:
     image: lscsde/awms-guacamole-operator:0.1.28
+  awms_crate:
+    image: lscsde/awms-crate-operator:0.1.4
