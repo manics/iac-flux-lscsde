@@ -53,4 +53,4 @@ components:
       branch: release/0.1.45
   awms_crate:
     repository:
-      branch: release/0.1.4
+      branch: release/0.1.5
