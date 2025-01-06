@@ -4,4 +4,4 @@ components:
   awms_guacamole:
     image: lscsde/awms-guacamole-operator:0.1.28
   awms_crate:
-    image: lscsde/awms-crate-operator:0.1.4
+    image: lscsde/awms-crate-operator:0.1.5
