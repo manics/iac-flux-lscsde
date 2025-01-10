@@ -54,3 +54,6 @@ components:
   awms_crate:
     repository:
       branch: release/0.1.5
+  awms_datasource:
+    repository:
+      branch: release/0.1.1
