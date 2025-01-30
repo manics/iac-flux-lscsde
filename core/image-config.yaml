@@ -7,3 +7,5 @@ components:
     image: lscsde/awms-crate-operator:0.1.5
   awms_datasource:
     image: lscsde/awms-datasource-operator:0.1.4
+  secrets_distributor:
+    image: lscsde/secrets-distributor:0.1.31
