@@ -29,7 +29,7 @@ components:
       branch: "release/0.1.71"
   secrets_distributor:
     repository:
-      branch: "release/0.1.6"
+      branch: "release/0.1.7"
   guacamole:
     repository:
       branch: release/0.1.24
